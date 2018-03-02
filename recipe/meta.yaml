@@ -17,13 +17,14 @@ source:
 
 build:
     number: 0
-    skip: true  # [py<35]
+    skip: true  # [win and py<35]
 
 requirements:
     build:
         - toolchain
         - ninja  # [win]
         - vc 14  # [win]
+        - python  # [win]
         - gcc  # [linux]
         - cmake
         - boost-cpp  1.66.0
