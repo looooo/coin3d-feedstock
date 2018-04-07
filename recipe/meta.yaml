@@ -21,19 +21,21 @@ build:
 
 requirements:
     build:
-        - toolchain
-        - ninja
-        - vc 14  # [win]
-        - python  # [win]
+        - {{ compiler('cxx') }}
+        - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+        #missing! - {{ cdt('libglu') }}  # [linux]
         - cmake
-        - boost-cpp  1.66.0
+        - ninja
+    host:
+        - boost-cpp
     run:
-        - vc 14  # [win]
-        - boost-cpp  1.66.0
+        - boost-cpp
 
 test:
     requires:
         - python {{ environ['PY_VER'] + '*' }}  # [win]
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
     files:
         - test.cpp  # [linux]
     commands:
