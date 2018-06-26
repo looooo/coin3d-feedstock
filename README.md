@@ -21,9 +21,9 @@ Current build status
 Current release info
 ====================
 
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d)
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-coin3d-green.svg)](https://anaconda.org/conda-forge/coin3d) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/coin3d.svg)](https://anaconda.org/conda-forge/coin3d) |
 
 Installing coin3d
 =================
