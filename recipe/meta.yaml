@@ -22,8 +22,6 @@ build:
 requirements:
     build:
         - {{ compiler('cxx') }}
-        - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
-        #missing! - {{ cdt('libglu') }}  # [linux]
         - cmake
         - ninja
     host:
