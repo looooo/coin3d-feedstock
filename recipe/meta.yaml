@@ -26,8 +26,18 @@ requirements:
         - ninja
     host:
         - boost-cpp
+        - libglu  # [linux]
+        # - mesalib  # [linux]
+        - xorg-libxi  # [linux]
+        - xorg-libxmu  # [linux]
+        - xorg-libxt  # [linux]
     run:
         - boost-cpp
+        - libglu  # [linux]
+        # - mesalib  # [linux]
+        - xorg-libxi  # [linux]
+        - xorg-libxmu  # [linux]
+        - xorg-libxt  # [linux]
 
 test:
     requires:
