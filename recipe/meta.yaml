@@ -22,15 +22,15 @@ build:
 requirements:
     build:
         - {{ compiler('cxx') }}
-        - {{ cdt('mesa-libgl-devel') }}
+        - {{ cdt('mesa-libgl-devel') }}  # [linux]
         - cmake
         - ninja
     host:
         - boost-cpp
-        - libglu
+        - libglu  # [linux]
     run:
         - boost-cpp
-        - libglu
+        - libglu  # [linux]
 
 test:
     requires:
