@@ -46,7 +46,7 @@ test:
     files:
         - test.cpp  # [linux]
     commands:
-        - ${CXX} -o test test.cpp -lCoin -L${PREFIX}/lib/ -I${PREFIX}/include/ # [linux]
+        - ${CXX} -o test test.cpp -Wl,-rpath-link -lCoin -L${PREFIX}/lib/ -I${PREFIX}/include/  # [linux]
         - ./test  # [linux]
         - where /r "%PREFIX%"  Coin4.dll  # [win]
         - test -f ${PREFIX}/lib/libCoin.dylib  # [osx]
