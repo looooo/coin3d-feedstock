@@ -28,15 +28,15 @@ requirements:
     host:
         - boost-cpp
         - libglu  # [linux]
-        - xorg-libxt
-        - xorg-libxmu
-        - xorg-libxi
+        - xorg-libxt  # [linux]
+        - xorg-libxmu  # [linux]
+        - xorg-libxi  # [linux]
     run:
         - boost-cpp
         - libglu  # [linux]
-        - xorg-libxt
-        - xorg-libxmu
-        - xorg-libxi
+        - xorg-libxt  # [linux]
+        - xorg-libxmu  # [linux]
+        - xorg-libxi  # [linux]
 
 test:
     requires:
@@ -46,7 +46,7 @@ test:
     files:
         - test.cpp  # [linux]
     commands:
-        - ${CXX} -o test test.cpp -lCoin -L${PREFIX}/lib/ -I${PREFIX}/include/  # [linux]
+        - ${CXX} -o test test.cpp -lCoin -L${PREFIX}/lib/ -I${PREFIX}/include/ # [linux]
         - ./test  # [linux]
         - where /r "%PREFIX%"  Coin4.dll  # [win]
         - test -f ${PREFIX}/lib/libCoin.dylib  # [osx]
