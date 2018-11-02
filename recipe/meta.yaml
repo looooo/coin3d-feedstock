@@ -28,13 +28,18 @@ requirements:
     host:
         - boost-cpp
         - libglu  # [linux]
+        - xorg-libxt
+        - xorg-libxmu
+        - xorg-libxi
     run:
         - boost-cpp
         - libglu  # [linux]
+        - xorg-libxt
+        - xorg-libxmu
+        - xorg-libxi
 
 test:
     requires:
-        - python {{ environ['PY_VER'] + '*' }}  # [win]
         - {{ cdt('mesa-libgl-devel') }}  # [linux]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
