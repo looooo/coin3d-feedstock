@@ -1,22 +1,20 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.0" %}
-{% set commit = "99d4d98" %}
-{% set sha256 = "1fdfb04a40dfaba5f98db100a8142371557912cd348b5d0770dec9e2963810ce" %}
+{% set sha256 = "b00d2a8e9d962397cf9bf0d9baa81bcecfbd16eef675a98c792f5cf49eb6e805" %}
 
 package:
     name: {{ name }}
     version: {{ version }}
 
 source:
-    fn: {{ name }}.tar.gz
-    url: https://bitbucket.org/VolkerEnderlein/coin/get/{{ commit }}.tar.gz
-    # url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
+    url: https://github.com/coin3d/coin/archive/Coin-{{ version }}.tar.gz
     sha256: {{ sha256 }}
     patches:
-        - cmake.patch
+        - 0001-cpack.d-is-now-optional.patch
+
 
 build:
-    number: 1006
+    number: 1007
     skip: true  # [win and py<35]
 
 requirements:
