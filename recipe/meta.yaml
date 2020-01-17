@@ -7,9 +7,11 @@ package:
     version: {{ version }}
 
 source:
-    fn: {{ name }}.tar.gz
     url: https://github.com/coin3d/coin/archive/Coin-{{ version }}.tar.gz
     sha256: {{ sha256 }}
+    patches:
+        - 0001-cpack.d-is-now-optional.patch
+
 
 build:
     number: 1007
