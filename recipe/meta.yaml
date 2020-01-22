@@ -1,20 +1,20 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.0" %}
-{% set sha256 = "b00d2a8e9d962397cf9bf0d9baa81bcecfbd16eef675a98c792f5cf49eb6e805" %}
+{% set sha256 = "91dc6e2eeb467b22ca7c24765a3fa6ee86c40a73c9393ad87a3f5cd7af8de2ac" %}
 
 package:
     name: {{ name }}
     version: {{ version }}
 
 source:
-    url: https://github.com/coin3d/coin/archive/Coin-{{ version }}.tar.gz
+    url: https://github.com/Renreok/coin/archive/7668526008934e25a9f57b34a652e7aa99b7f5f3.tar.gz
     sha256: {{ sha256 }}
     patches:
         - 0001-cpack.d-is-now-optional.patch
 
 
 build:
-    number: 1007
+    number: 1008
     skip: true  # [win and py<35]
 
 requirements:
