@@ -38,14 +38,12 @@ requirements:
         - boost-cpp
         - libglu  # [linux]
         - xorg-libxt  # [linux]
-        - xorg-libxmu  # [linux]
         - xorg-libxi  # [linux]
         - expat
     run:
         - boost-cpp
         - libglu  # [linux]
         - xorg-libxt  # [linux]
-        - xorg-libxmu  # [linux]
         - xorg-libxi  # [linux]
         - expat
 
