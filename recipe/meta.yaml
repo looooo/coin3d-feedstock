@@ -21,7 +21,7 @@ source:
         - superglue.patch
 
 build:
-    number: 1012
+    number: 1013
     skip: true  # [win and py<35]
 
 requirements:
@@ -36,13 +36,12 @@ requirements:
         - cmake
         - ninja
     host:
-        - boost-cpp
+        - libboost-devel
         - libglu  # [linux]
         - xorg-libxt  # [linux]
         - xorg-libxi  # [linux]
         - expat
     run:
-        - boost-cpp
         - libglu  # [linux]
         - xorg-libxt  # [linux]
         - xorg-libxi  # [linux]
