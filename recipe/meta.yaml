@@ -36,7 +36,7 @@ requirements:
         - cmake
         - ninja
     host:
-        - libboost-devel
+        - libboost-headers
         - libglu  # [linux]
         - xorg-libxt  # [linux]
         - xorg-libxi  # [linux]
