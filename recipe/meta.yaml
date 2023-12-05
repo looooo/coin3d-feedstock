@@ -1,8 +1,6 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.2" %}
-{% set sha256 = "4970051b6e0714f4207f64882dd1748e2c759ab8ebfa3e53d45703d6d3cc6512" %}
 {% set superglue_version = "1.3.0" %}
-{% set superglue_sha256 = "f408adcfb706e7c781db9c218ef9e8ba56d43995ccb61dffad5f6154c34f17d6" %}
 
 package:
   name: {{ name }}
@@ -10,10 +8,10 @@ package:
 
 source:
   - url: https://github.com/coin3d/coin/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+    sha256: fab19ccdb5f199dae5543036738076a957a3097589b473ef496696c24eeac3d2
 
   - url: https://github.com/coin3d/superglu/archive/superglu-{{ superglue_version }}.tar.gz
-    sha256: {{ superglue_sha256 }}
+    sha256: f408adcfb706e7c781db9c218ef9e8ba56d43995ccb61dffad5f6154c34f17d6
     folder: superglue
     patches:
       - superglue.patch
