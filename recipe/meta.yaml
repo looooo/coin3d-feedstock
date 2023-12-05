@@ -9,7 +9,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/coin3d/coin/archive/Coin-{{ version }}.tar.gz
+  - url: https://github.com/coin3d/coin/archive/refs/tags/v{{ version }}.tar.gz
     sha256: {{ sha256 }}
 
   - url: https://github.com/coin3d/superglu/archive/superglu-{{ superglue_version }}.tar.gz
