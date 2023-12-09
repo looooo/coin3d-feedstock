@@ -17,11 +17,11 @@ source:
       - superglue.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
-    - gnuconfig      # [unix]
+    - gnuconfig                          # [unix]
     - {{ compiler('cxx') }}
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
@@ -29,12 +29,12 @@ requirements:
     - ninja
   host:
     - libboost-headers
-    - libglu      # [linux]
+    - libglu          # [linux]
     - xorg-libxt      # [linux]
     - xorg-libxi      # [linux]
     - expat
   run:
-    - libglu      # [linux]
+    - libglu          # [linux]
     - xorg-libxt      # [linux]
     - xorg-libxi      # [linux]
     - expat
