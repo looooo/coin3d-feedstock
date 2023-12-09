@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/coin3d-feedstoc
 
 Home: https://bitbucket.org/Coin3D/coin/wiki/Home
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Summary: Coin3D is a c++ high-level 3D graphics toolkit.
+Summary: Coin3D is a C++ high-level 3D graphics toolkit.
 
 Development: https://bitbucket.org/Coin3D/coin/wiki/Home
 
