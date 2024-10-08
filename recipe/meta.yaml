@@ -17,7 +17,7 @@ source:
       - superglue.patch
 
 build:
-  number: 1
+  number: 2
   run_exports:
     - {{ pin_subpackage('coin3d', max_pin='x.x') }}
 
@@ -28,19 +28,16 @@ requirements:
     - {{ stdlib("c") }}
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
+    - {{ cdt('libxi-devel') }}           # [linux]
+    - {{ cdt('libxt-devel') }}
     - cmake
     - ninja
   host:
     - libboost-headers
-    - libglu          # [linux]
-    - xorg-libxt      # [linux]
-    - xorg-libxi      # [linux]
-    - expat
+    - libexpat
   run:
     - libglu          # [linux]
-    - xorg-libxt      # [linux]
-    - xorg-libxi      # [linux]
-    - expat
+    - libexpat
 
 test:
   requires:
